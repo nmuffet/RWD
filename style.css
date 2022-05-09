@@ -1,0 +1,818 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*css reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end css reset*/
+
+/*Global styles*/
+html {
+	font-size: 18px;
+	--yellow: #e4b62d;
+	--cyan: #33CCCC;
+	--red: #ed1c24;
+	--black: #222222;
+	--gray: #393939;
+}
+
+* {
+	box-sizing: border-box;
+	font-size: 1rem;
+	color: var(--black);
+	font-family: 'Work Sans', sans-serif;
+}
+
+
+img {
+	max-width: 100%;
+
+}
+
+
+
+/*nav styling*/
+/* Style the navigation menu */
+.topnav {
+	overflow: hidden;
+	background-color: #ed1c24;
+	position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+	display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1rem;
+	display: block;
+	width: 40%;
+	max-width: 200px;
+	padding: .5rem;
+	text-align: right;
+	border-bottom: 2px solid transparent;
+}
+.topnav a:hover {
+	color: white;
+border-bottom: 2px solid white;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 2rem;
+}
+
+.fa {
+	color: white;
+}
+
+
+
+/* Style the active link (or home/logo) */
+.active {
+	background-color: var(--red);
+	color: white;
+}
+
+@media only screen and (min-width: 800px) {
+	.icon {
+		visibility: hidden;
+	}
+
+	.topnav {
+		display: flex;
+	}
+
+	.topnav .wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	.topnav #myLinks {
+		display: flex;
+		visibility: visible;
+	}
+
+}
+
+/*end nav styling*/
+
+.hero-image {
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.hero-image img {
+	margin-top: -10px;
+	width: auto;
+}
+
+
+
+
+/*text styles*/
+h1 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 1rem 0;
+	font-weight: 800;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	font-style: italic;
+	display: inline-block;
+	border-bottom: 2px solid #33CCCC;
+}
+
+h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+p {
+	line-height: 1.4rem;
+	padding-bottom: 1rem;
+}
+
+span.material-symbols-outlined.accordion {
+	font-size: 3rem;
+}
+
+/*end text styles*/
+
+
+.feature {
+	padding-bottom: 2rem;
+}
+
+.feature img {
+	height: 60px;
+	display: block;
+	margin: auto;
+}
+
+#map iframe {
+	height: 300px;
+	padding-bottom: 2rem;
+	overflow: hidden;
+}
+
+/*footer styles*/
+
+footer {
+	padding: 1rem;
+	background-color: var(--gray);
+	color: white;
+}
+
+footer li {
+	font-style: italic;
+	color: white;
+	padding-bottom: .25rem;
+}
+
+footer h3 {
+	color: white;
+}
+
+footer p {
+	font-style: italic;
+	color: white;
+	padding: 0;
+}
+
+footer .wrapper div {
+	padding-bottom: 1rem;
+}
+
+/*end footers tyles*/
+
+
+/*PAGE: VISIT*/
+.games,
+.admission {
+	padding-bottom: 2rem;
+}
+
+#visit span{
+	font-style: italic;
+	font-weight: 500;
+	font-size:.8rem;
+	color:var(--red)
+}
+
+a{
+	color:var(--red);
+	text-decoration: none;
+
+}
+a:hover{
+	color:var(--cyan);
+}
+
+@media only screen and (min-width: 800px) {
+	#visit main {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+	}
+
+	#visit h1 {
+		grid-row-start: 1;
+		grid-column: span 8;
+	}
+
+	#visit .hero-image {
+		grid-column: span 5;
+		display: block;
+		height: 100%;
+	}
+
+	#visit .hero-image img {
+		height: auto;
+	}
+
+	#visit .content {
+		grid-column: span 3;
+		padding: 0 2rem;
+	}
+}
+
+/*END VISIT*/
+
+/*PAGE FAQ*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: var(--cyan);
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+	background-color: #ccc;
+	color: var(--black)
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+	padding: 1rem 0;
+}
+
+.card {
+	padding: .5rem 0;
+}
+
+#faq h2 {
+	font-size: 1rem;
+	font-style: normal;
+	line-height: 1.1rem;
+}
+
+@media only screen and (min-width: 800px) {
+	#faq section.faq-cards {
+		display: flex;
+	}
+
+	.col1,
+	.col2,
+	.col3 {
+		width: 33%;
+		margin: 0 .5rem;
+	}
+}
+
+
+/*END FAQ*/
+
+/*PAGE MENU*/
+
+#menu .card {
+	border-bottom: 3px solid white;
+	Padding: 0;
+}
+
+#menu .accordion {
+	background-color: var(--yellow);
+
+}
+
+#menu .item p {
+	text-transform: lowercase;
+	padding: .2rem 0;
+	font-style: italic;
+	font-size: .9rem;
+	line-height: 1rem;
+}
+
+#menu .item .price {
+	font-weight: 600;
+	font-style: normal;
+	color: var(--red)
+}
+
+.item {
+	border-bottom: 2px dotted var(--cyan);
+	margin: 1rem 0;
+}
+
+.tabs {
+	display: none;
+}
+
+#menu button {
+	background-color: var(--yellow);
+	font-weight: 600;
+	color: white;
+	padding: .5rem;
+	border: none;
+	border-radius: .5rem .5rem 0 0;
+	margin-right: .25rem;
+}
+
+#menu button:hover {
+	color: var(--black);
+	background-color: #ccc;
+}
+
+@media only screen and (min-width: 800px) {
+
+	#menu .menu {
+		display: flex;
+	}
+
+	#menu .card {
+		border-right: .25rem solid white;
+	}
+
+	#menu .panel {
+		display: block;
+		overflow: visible;
+		max-height: 500px;
+	}
+
+	.active,
+	.accordion:hover {
+		background-color: var(--yellow);
+		color: white;
+	}
+
+}
+
+/*END MENU*/
+
+/*PAGE ABOUT*/
+@media only screen and (min-width: 800px) {
+
+	#about .hero-image{
+		height: 500px;
+		overflow:hidden;
+	}
+
+
+
+	#about .hero-image img{
+		height: 800px;
+		width: 100%;
+		object-fit:cover;
+	margin-top: 0;
+	}
+	#about .about{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-column-gap: 2rem;
+		padding-top: 2rem;
+	}
+
+	#about .about img.empty{
+		grid-row-start: 1;
+	}
+
+	#about .about img{
+		grid-column-start: 2;
+	}
+
+	#about .about .gordon{
+		margin-top: -6rem;
+	}
+	#about .about p{
+		grid-column-start: 1;
+	}
+}
+
+/*END ABOUT*/
+
+/*EVENT*/
+#event h2{
+	border-bottom: none;
+	padding-bottom: 1rem;
+}
+
+#event .note{
+	font-style:italic;
+	font-weight:300;
+}
+#event main ul{
+	list-style:square;
+	padding: 1rem 0 .5rem;
+	border-top: dotted 2px var(--cyan);
+	border-bottom: dotted 2px var(--cyan);
+}
+#event main li{
+	font-size:1rem;
+	line-height: 1.4rem;
+	padding-bottom: 1rem;
+	font-style: italic;
+	color:var(--red);
+	font-weight: 500;
+}
+
+
+#event form{
+	background-color: var(--cyan);
+	padding: .5rem;
+}
+
+#event form label{
+	color:white;
+	font-weight:600;
+	font-size: 1.2rem;
+}
+
+#event form input[type=text]{
+	border-radius: .25rem;
+	border: none;
+	margin: .25rem 0 .5rem;
+	font-weight: 300;
+}
+
+#event form label.radio{
+	font-size: 1rem;
+}
+
+#event form p {
+	color:white;
+	font-weight:600;
+	font-size: 1.2rem;
+	padding-top: 0;
+	padding-bottom: .25rem;
+}
+
+#event button{
+	padding:1rem;
+	border-radius:25px;
+	background-color: var(--red);
+	border: none;
+	color:white;
+	font-size:1.2rem;
+	font-weight: 500;
+	max-width:250px;
+}
+#event button:hover{
+
+background-color: #ccc;
+color:var(--black);
+}
+
+
+@media only screen and (min-width: 800px) {
+
+
+
+#event .hero-image img{
+	height: 500px;
+	width: 100%;
+	object-fit:cover;
+
+}
+
+	#event h2{
+		text-align: center;
+		display: block;
+	}
+
+	#event form{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: .5rem 1rem;
+		padding: 1rem 10%;
+	}
+
+	#event form .q{
+		width: 100%;
+
+	}
+
+	#event input[type=text]{
+		width: 100%;
+	}
+
+	#event .type{
+		display: flex;
+	}
+
+	#event .type .radio{
+		display: flex;
+		padding-right: 1rem;
+	}
+
+	#event .flex{
+		display: flex;
+	}
+
+	#event .note{
+		width: 50%;
+		padding-left: 2rem;
+	}
+
+	#event ul{
+		margin-bottom: 1rem;
+	}
+
+}
+
+
+
+/*END EVENT*/
+
+/*PAGE LINEUP*/
+
+#lineup .card{
+	padding: 1rem;
+	border-bottom: 2px dotted var(--cyan);
+}
+#lineup .card img{
+	width: 100%;
+	height: auto;
+}
+
+#lineup .card p{
+	font-size: 1.5rem;
+	font-weight: 600;
+	
+	text-align: center;
+}
+
+
+@media only screen and (min-width: 800px) {
+#lineup .grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2rem;
+}
+}
+
+/*END LINEUP*/
+
+
+/*MAIN MEDIA QUERIES*/
+
+@media only screen and (min-width: 800px) {
+	.wrapper {
+		padding: 0 15%;
+	}
+
+	section.features {
+		display: flex;
+		padding: 2.5rem 0;
+		justify-content: center;
+	}
+
+	section.features .feature {
+		padding: 0 2rem;
+		width: 33%;
+	}
+
+	/*Text styles media query*/
+	h1 {
+		font-size: 3rem;
+		line-height: 3.5rem;
+		padding: 2.5rem 10%;
+	}
+
+	h2 {
+		font-size: 2rem;
+		line-height: 2.2rem;
+	}
+
+	p {
+		font-size: 1.1rem;
+		line-height: 1.5rem;
+		padding-top: 1rem;
+	}
+
+
+
+	/*END TEXT STYLES ON QUERY*/
+
+
+	.hero-image{
+		height: 500px;
+		overflow:hidden; 
+	}
+
+
+
+	.hero-image img{
+		height: 800px;
+		width: 100%;
+		object-fit:cover;
+	
+	}
+
+	#home .hero-image img{
+		margin-top: -100px;
+	}
+
+	/*FOOTER MEDIA QUERY*/
+	footer .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer .wrapper div:not(.hours) {
+		padding-left: 2rem;
+	}
+
+	footer .social ul {
+		display: flex;
+	}
+
+	footer .social li {
+		padding-left: 1rem;
+	}
+
+	footer h3 {
+		padding-bottom: .5rem;
+	}
+
+	footer .hours li {
+		padding-bottom: .5rem;
+	}
+
+	footer {
+		padding: 2rem 0;
+	}
+
+	/*END FOOTER MEDIA QUERY*/
+
+}
