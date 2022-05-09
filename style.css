@@ -215,6 +215,10 @@ border-bottom: 2px solid white;
 	color: white;
 }
 
+.wrapper{
+	padding: 0 2%;
+}
+
 @media only screen and (min-width: 800px) {
 	.icon {
 		visibility: hidden;
